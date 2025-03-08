@@ -87,3 +87,12 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+
+.google-login-wrapper {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.google-login-wrapper:hover {
+  transform: scale(1.05);
+}

@@ -38,7 +38,9 @@ const App = () => {
           </button>
         </div>
       ) : (
-        <GoogleLogin onSuccess={handleSuccess} onError={() => console.log("Login Failed")} />
+        <div className="google-login-wrapper">
+          <GoogleLogin onSuccess={handleSuccess} onError={() => console.log("Login Failed")} />
+        </div>
       )}
     </div>
   );
