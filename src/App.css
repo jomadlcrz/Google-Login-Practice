@@ -80,3 +80,10 @@ h2 {
     font-size: 14px;
   }
 }
+/* Highlighted User Name */
+.user-info h3 span {
+  background: linear-gradient(45deg, #ffdd57, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}

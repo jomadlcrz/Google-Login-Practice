@@ -31,7 +31,7 @@ const App = () => {
       <h2>Google Login in Vite + React</h2>
       {user ? (
         <div className="user-info">
-          <h3>Welcome, {user.name}</h3>
+          <h3>Welcome, <span>{user.name}</span></h3>
           <img src={user.picture} alt="Profile" />
           <button className="logout-btn" onClick={handleLogout}>
             Logout
