@@ -39,7 +39,13 @@ const App = () => {
         </div>
       ) : (
         <div className="google-login-wrapper">
-          <GoogleLogin onSuccess={handleSuccess} onError={() => console.log("Login Failed")} />
+          <GoogleLogin
+            onSuccess={handleSuccess}
+            onError={() => console.log("Login Failed")}
+            theme="outline"
+            useOneTap={false} // Disables automatic sign-in
+            prompt="select_account" // Forces "Sign in with Google" every time
+          />
         </div>
       )}
     </div>
