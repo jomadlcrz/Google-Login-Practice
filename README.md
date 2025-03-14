@@ -8,7 +8,7 @@ A **modern React app** built with **Vite**, featuring **Google Login (OAuth 2.0)
 ✅ **Secure Authentication** (OAuth 2.0)  
 ✅ **Session Persistence** (User stays logged in after refresh)  
 ✅ **Environment Variables** (No hardcoded credentials)  
-✅ **Styled with Glassmorphism UI** ✨  
+✅ **Styled with Neon UI** ✨  
 
 ---
 
@@ -57,7 +57,7 @@ npm run dev
 
 ## **🖌️ UI Preview**
 ### 🔹 **Light & Modern UI**
-✨ Glassmorphism styling  
+✨ Neon styling  
 ✨ Animated **Google Sign-In Button**  
 ✨ Smooth hover effects  
 
@@ -69,7 +69,6 @@ npm run dev
 | `vite`               | latest  |
 | `react`              | latest  |
 | `@react-oauth/google` | latest  |
-| `jwt-decode`         | latest  |
 
 ---
 
