@@ -89,51 +89,37 @@ h2 {
   text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
 }
 
-/* Google Login Button Container */
-.google-login-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-/* Custom Google Login Wrapper */
-.google-login-wrapper {
+/* Custom Google Button */
+.custom-google-btn {
   display: inline-block;
   padding: 12px 20px;
   border-radius: 8px;
-  background: rgba(0, 255, 255, 0.1); /* Semi-transparent neon */
-  border: 2px solid #0ff; /* Neon border */
+  background: transparent;
+  border: 2px solid #0ff; /* Neon Cyan */
+  color: #0ff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
   box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
   transition: 0.3s ease-in-out;
 }
 
-/* Glow More on Hover */
-.google-login-wrapper:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
-  background: rgba(0, 255, 255, 0.2);
-}
-
-/* Remove Google Button Default Styles */
-.google-login-wrapper div {
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* Style the "Sign in with Google" Text */
-.google-login-wrapper div span {
-  color: #0ff !important; /* Neon Cyan */
-  font-weight: bold;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
-  font-family: "Orbitron", sans-serif;
-  font-size: 16px;
-}
-
 /* Hover Effect */
-.google-login-wrapper div:hover span {
-  color: #ff00ff !important; /* Neon Pink */
+.custom-google-btn:hover {
+  transform: scale(1.1);
+  background: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  color: #ff00ff; /* Neon Pink */
   text-shadow: 0 0 8px #ff00ff, 0 0 15px #ff00ff;
+}
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* Responsive Design */
