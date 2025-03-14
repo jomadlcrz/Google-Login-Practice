@@ -27,6 +27,7 @@ const App = () => {
 
     // Force Google to forget the last user
     document.cookie = "G_AUTHUSER_H=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "G_AUTHUSER_H=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=google.com; path=/";
   };
 
   return (
@@ -42,13 +43,15 @@ const App = () => {
         </div>
       ) : (
         <div className="google-login-wrapper">
-          <GoogleLogin
-            onSuccess={handleSuccess}
-            onError={() => console.log("Login Failed")}
-            theme="outline"
-            useOneTap={false} // Disables automatic sign-in
-            prompt="select_account" // Forces "Sign in with Google" every time
-          />
+        <GoogleLogin
+          onSuccess={handleSuccess}
+          onError={() => console.log("Login Failed")}
+          theme="outline"
+          type="standard" // Ensures the standard "Sign in with Google" button
+          shape="rectangular"
+          size="large"
+          prompt="select_account" // Forces account selection
+        />
         </div>
       )}
     </div>
