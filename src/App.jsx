@@ -24,6 +24,9 @@ const App = () => {
     googleLogout();
     setUser(null);
     localStorage.removeItem("user"); // Remove from localStorage
+
+    // Force Google to forget the last user
+    document.cookie = "G_AUTHUSER_H=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   };
 
   return (
